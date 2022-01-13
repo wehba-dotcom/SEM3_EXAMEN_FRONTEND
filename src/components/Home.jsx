@@ -4,13 +4,13 @@ function Home( ) {
   
   return (
     <div style={{textAlign:'center', margin:'20px',backgroundColor:'lightgreen'}}>
-      <h2>Welcome to third section computer scientist</h2>
+      <h2>Welcome To This Travel Agency </h2>
      
-      <p>In this single web page application we have: </p>
+      <p>In this  web application we have: </p>
         <ul style={{ listStyleType: "none"}}>
-          <li>1-</li>
-          <li>2-</li>
-          <li>3-</li>
+          <li>1-you can see all owers Trips</li>
+          <li>2-You can choise witch travel and add your self</li>
+          <li>3-You can see all guides in ower company</li>
         </ul>
     </div>
   );

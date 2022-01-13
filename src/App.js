@@ -4,8 +4,8 @@ import Home from './components/Home.jsx';
 import Trips from './components/Trips';
 import Element2 from './components/Element2.jsx';
 import Element3 from './components/Element3.jsx';
-import Admin1 from './components/Admin1.jsx';
-import Admin2 from './components/Admin2.jsx';
+import ModifyTrip from './components/ModifyTrip.jsx';
+import AddTrip from './components/AddTrip.jsx';
 import SignIn from './components/SignIn';
 import NoMatch from './components/NoMatch.jsx';
 import facade from './apiFacade';
@@ -57,13 +57,13 @@ function App() {
               <Element3 facade={facade} errorMessage={errorMessage} setErrorMessage={setErrorMessage} />}
           </Route>
          
-          <Route path="/admin1">
+          <Route path="/modifytrip">
             {facade.hasUserAccess('admin', loggedIn) && 
-              <Admin1 facade={facade} errorMessage={errorMessage} setErrorMessage={setErrorMessage} />}
+              <ModifyTrip facade={facade} errorMessage={errorMessage} setErrorMessage={setErrorMessage} />}
           </Route>
-          <Route path="/admin2">
+          <Route path="/addtrip">
             {facade.hasUserAccess('admin', loggedIn) && 
-              <Admin2 facade={facade} errorMessage={errorMessage} setErrorMessage={setErrorMessage} />}
+              <AddTrip facade={facade} errorMessage={errorMessage} setErrorMessage={setErrorMessage} />}
           </Route>
           <Route path="*">
             <NoMatch />

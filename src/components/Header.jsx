@@ -17,10 +17,10 @@ function Header({ facade, loggedIn }) {
         )}
         
         {facade.hasUserAccess('admin', loggedIn) && (
-          <li><NavLink activeClassName="active" to="/admin1">Admin1</NavLink></li>
+          <li><NavLink activeClassName="active" to="/modifyTrip">ModifyTrip</NavLink></li>
         )}
          {facade.hasUserAccess('admin', loggedIn) && (
-          <li><NavLink activeClassName="active" to="/admin2"> admin2</NavLink></li>
+          <li><NavLink activeClassName="active" to="/AddTrip"> AddTrip</NavLink></li>
         )}
          <li><NavLink  activeClassName="active" to="/signin">SignIn</NavLink></li>
       </ul>
