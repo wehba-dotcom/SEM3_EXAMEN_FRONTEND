@@ -7,7 +7,7 @@ function Header({ facade, loggedIn }) {
         <li> <NavLink exact activeClassName="active" to="/"> Home </NavLink></li>
               
         {facade.hasUserAccess('user', loggedIn) && (
-          <li><NavLink activeClassName="active" to="/element1">Element1</NavLink></li>
+          <li><NavLink activeClassName="active" to="/trips">Trips</NavLink></li>
         )}
          {facade.hasUserAccess('user', loggedIn) && (
           <li><NavLink activeClassName="active" to="/element2">element2</NavLink></li>

@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header.jsx';
 import Home from './components/Home.jsx';
-import Element1 from './components/Element1';
+import Trips from './components/Trips';
 import Element2 from './components/Element2.jsx';
 import Element3 from './components/Element3.jsx';
 import Admin1 from './components/Admin1.jsx';
@@ -44,9 +44,9 @@ function App() {
             setErrorMessage={setErrorMessage}
             />
             </Route>
-          <Route path="/element1">
+          <Route path="/trips">
             {facade.hasUserAccess('user', loggedIn) && 
-              <Element1 facade={facade} errorMessage={errorMessage} setErrorMessage={setErrorMessage}/>}
+              <Trips facade={facade} errorMessage={errorMessage} setErrorMessage={setErrorMessage}/>}
           </Route>
           <Route path="/element2">
             {facade.hasUserAccess('user', loggedIn) && 
